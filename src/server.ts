@@ -59,13 +59,13 @@ const drivers = [
 server.get("/teams", async(request, response) => {
     response.type("aplication/json").code(200)
 
-    return [ teams ];
+    return teams;
 });
 
 server.get("/drivers", async(request, response) => {
-    response.type("aplication/json").code(200)
+    response.type("application/json").code(200)
 
-    return [ drivers ];
+    return drivers;
 });
 
 // contrato de como quero receber a variável ID na rota abaixo:
